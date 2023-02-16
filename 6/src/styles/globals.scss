@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-white antialiased;
+  }
+
+  body {
+    @apply m-auto flex h-full min-h-screen w-full;
+  }
+
+  html {
+    background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  }
+
+  p {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap;
+  }
+}
+
+.dot-top {
+  border-radius: 1.5rem 1.5rem 0 0;
+  background: linear-gradient(0deg, transparent 10px, #fff 0) bottom right,
+    linear-gradient(0deg, transparent 10px, #fff 0) bottom left;
+  background-size: 51% 100%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      circle at 100% 100.5%,
+      transparent 12px,
+      #fff 13px
+    ),
+    radial-gradient(circle at 0 100.5%, transparent 12px, #fff 13px);
+}
+
+.dot-middle {
+  border-radius: 0;
+  background: linear-gradient(0deg, transparent 1rem, #fff 0) top left,
+    linear-gradient(0deg, transparent 1rem, #fff 0) top right,
+    linear-gradient(0deg, transparent 1rem, #fff 0) bottom right,
+    linear-gradient(0deg, transparent 1rem, #fff 0) bottom left;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      circle at 0 -0.5%,
+      transparent 12px,
+      #fff 13px
+    ),
+    radial-gradient(circle at 100% -0.5%, transparent 12px, #fff 13px),
+    radial-gradient(circle at 100% 100.5%, transparent 12px, #fff 13px),
+    radial-gradient(circle at 0 100.5%, transparent 12px, #fff 13px);
+}
+
+.dot-bottom {
+  border-radius: 0 0 1.5rem 1.5rem;
+  background: linear-gradient(0deg, transparent 10px, #fff 0) top left,
+    linear-gradient(0deg, transparent 10px, #fff 0) top right;
+  background-size: 51% 100%;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+      circle at 0 -0.5%,
+      transparent 12px,
+      #fff 13px
+    ),
+    radial-gradient(circle at 100% -0.5%, transparent 12px, #fff 13px);
+}

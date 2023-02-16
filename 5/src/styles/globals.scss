@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-skin-bg text-skin-text;
+  }
+
+  body {
+    @apply m-auto flex h-screen items-center justify-center;
+  }
+
+  select {
+    @apply bg-skin-bg text-skin-text;
+  }
+}
